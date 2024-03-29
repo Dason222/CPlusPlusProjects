@@ -1,0 +1,59 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+
+    int n, m, sk, reverse=0, rem;
+    cout<<" Pasirinkite skaiciuokle"<<endl;
+    cout<<" 0 -Lyginiu skaiciu skaiciuokle"<<endl;
+    cout<<" 1 -Nelyginiu skaiciu skaiciuokle"<<endl;
+    cout<<" 2 -Atspausdinti visus sveikuosius skaicius"<<endl;
+    cout<<" 3 -Atspausdinti visus sveikuosius skaicius atvirk�cia tvarka"<<endl;
+    
+    cout<<"---> ";
+    cin>>sk;
+    
+    cout<<"Iveskite n skaiciu: ";
+    cin>>m;
+    
+    if(sk==0)
+	{
+    cout << "Lyginiai skaiciai intervale yra: " << endl;
+    
+     for (n=2; n<=m; n=n+2)
+	    
+    cout<< n <<endl;
+    cout<<endl;
+}
+    if(sk==1)
+	{
+    cout <<"Nelyginiai skaiciai intervale yra: " << endl;
+
+    for (n=1; n<m; n=n+2)
+    
+        cout << n <<endl;
+}
+ if(sk==2)
+{
+ 	cout <<"Sveikieji skaiciai intervale yra: " << endl;
+ 	
+ for (n=1; n<=m; n++)
+ 
+  	     cout<< n <<endl;
+  	
+ }
+ if(sk==3)
+ {
+ 	cout <<"Sveikieji skaiciai intervale atvirksciai yra: " << endl;
+ 	
+     int a=1;
+        for (int i=n;i>=a ; i--)
+		{
+    cout << i << " ";
+        }
+  }  
+    
+    return 0;
+}
